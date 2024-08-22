@@ -6,7 +6,7 @@ public class LocalizationSettingsPlugin: CAPPlugin, CAPBridgedPlugin {
     public let identifier = "LocalizationSettingsPlugin"
     public let jsName = "LocalizationSettings"
     public let pluginMethods: [CAPPluginMethod] = [
-        CAPPluginMethod(name: "getLanguage", returnType: CAPPluginReturnPromise)
+        CAPPluginMethod(name: "getLanguage", returnType: CAPPluginReturnPromise),
         CAPPluginMethod(name: "setLanguage", returnType: CAPPluginReturnPromise)
     ]
     private let implementation = LocalizationSettings()
