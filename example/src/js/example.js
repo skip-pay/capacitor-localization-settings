@@ -1,7 +1,7 @@
 import { LocalizationSettings } from '@skippay/capacitor-localization-settings';
 
 window.testGetLanguage = () => {
-  LocalizationSettings.getLanguage().then(result => {
+  LocalizationSettings.getLanguage().then((result) => {
     alert(result.value);
   });
 };

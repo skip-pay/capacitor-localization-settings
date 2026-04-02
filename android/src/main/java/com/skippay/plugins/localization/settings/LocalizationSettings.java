@@ -1,13 +1,12 @@
 package com.skippay.plugins.localization.settings;
 
 import android.os.Build;
-
 import androidx.appcompat.app.AppCompatDelegate;
 import androidx.core.os.LocaleListCompat;
-
 import java.util.Locale;
 
 public class LocalizationSettings {
+
     public String getLanguage() {
         return getCurrentLanguage();
     }
@@ -21,7 +20,6 @@ public class LocalizationSettings {
 
     private String getLanguageTag(String language) {
         Locale locale = Locale.forLanguageTag(language);
-
 
         if (!locale.getCountry().isEmpty()) {
             return locale.toLanguageTag();
@@ -47,5 +45,4 @@ public class LocalizationSettings {
             return Locale.getDefault().toLanguageTag();
         }
     }
-
 }

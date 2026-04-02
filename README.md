@@ -2,7 +2,12 @@
 
 Capacitor module to expose per-app language preferences API on iOS and Android.
 
-Capacitor v5
+## Version Compatibility
+
+| Plugin Version | Capacitor Version |
+|----------------|-------------------|
+| 1.x            | 8.x               |
+| 0.0.x          | 5.x               |
 
 ## Install
 
